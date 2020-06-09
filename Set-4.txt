@@ -1,0 +1,23 @@
+1) Find max element in array using multi-cores.
+
+2) Design an algorithm for below input and output:
+Input:
+grep -a 1 "test" ==> output 1 line
+test
+bye
+
+grep -b 1 "test" ==> output 1 line before string
+Hello
+test
+
+Output:
+grep -c 1 "test" ==> merge of -a and -b
+Hello
+test 
+bye
+
+3) Implement LRU Cache.
+
+4) Find Maximum product of three numbers in an array containing both positive and negative number?
+int arr[] = { 1, -4, 3, -6, 7, 0 };
+Max product is: 168

@@ -1,0 +1,73 @@
+1) Design a system which can handle Jobs Scheduling.
+-- Data Size: 10 GB max and 5MB min
+-- Concurrency: capability to execute ~200 jobs in parallel
+-- Automation is the key requirement
+-- Data Source and Target: ADLS Gen2
+-- Define Scheduling algorithm
+-- Your system should be able to perform housekeeping activities?
+
+2) Given a 8 core system, Launch 8 threads in parallel to find max element in the array. Write most optimized program?
+
+3) Given an ad-server on which incoming user request for search is further distributed on multilple servers which performs some business logic, and at the end their is listing server which provides response of request.
+Now, if there is an error in Production environment, then how will you perform following:
+
+a) Search in logs of TB of size
+b) Design cost optimized troubleshooting mechanism
+c) List all possible steps you will take to quickly fix the issue in Prod
+
+4) Implement below design:
+
+--Input Stream--
+A.....apple...
+B....ball.....
+C..cat........
+D...dog..cat..
+E...egg.......
+F.....
+...
+...
+-------------
+grep -C 2 cat -P 1024
+-------------
+
+---Output-----
+A.....apple...
+B....ball.....
+C..cat........
+D...dog..cat..
+E...egg.......
+--------------
+B....ball.....
+C..cat........
+D...dog..cat..
+E...egg.......
+F.....
+--------------
+
+5) Given a pointer to a node in Linked List without head. Delete it?
+
+6) Followup- How will your same deletion algorithm will work if the node is last in the linked list? 
+Identify whether your solution will work in all corner cases?
+
+7) What will be the output of below code?
+
+public class M1 {
+
+	public static void main(String[] args) {
+		StringBuilder sb1 = new StringBuilder("Hai ");
+		StringBuilder sb2 = new StringBuilder("Hello ");
+		int x = 10;
+		 
+		test(sb1, sb2, x);
+		System.out.println(sb1.toString()+ " "+ sb2.toString() + " "+x);
+	}
+	
+	private static void test(StringBuilder b1, StringBuilder b2, int a)
+	{
+	  b1 = null;
+	  b2.append("test");
+	  a =25;
+	}
+}
+
+8) What is the best way to clone a object when it is received over the network?

@@ -1,0 +1,80 @@
+1) A company plans to open Treasure Truck Pop-Ups in the park areas of Technicia. Technicia is represented as a grid of M*N blocks. Each block 
+represents either a park area, denoted by 1, or a commercial area, denoted by 0. Adjacent blocks with value 1 are considered a contiguous park.
+Diagonal blocks with value 1 are not considered part of the same contiguity. Company plans to have a Tresure truck Pop-up in each contiguous 
+park. 
+
+Write an algorithm to find the number of Treasure Truck Pop-Ups that company can open in the area of Technicia.
+
+Input:
+The input to the function/method consists of three arguments- rows, an integer representing the number of rows in the grid;
+column, an integer representing the number of columns in the grid;
+grid, a two-dimensional integer array representing Technicia
+
+Output:
+Return an integer representing the number of Treasure Truck Pop-Ups that company can open in the area of Technicia.
+
+Exmaple:
+Input
+rows=5
+column=4
+grid=
+1 1 0 0
+0 0 1 0
+0 0 0 0 
+1 0 1 1
+1 1 1 1 
+
+Output
+3
+
+Explanation:
+The first cluster is the two adjacent 1's in row one.
+The second cluster is the 1 on row two, which is not adjacent to any other 1's.
+(diagonal blocks are not considered part of the same cluster).
+The third cluster is the set of seven adjacent 1's in rows four and five.
+The total number of clusters of open areas = 3.
+
+
+2) You have been given tasks of reordering some data from a log file. Every line in the log file is space delimited list of strings and all 
+lines begin with an identifier that is alphanumeric. After the identifier, a line will consist of either a list of words using only English
+letters or only a list of integers. There will be no line which consists of only an identifier.
+Your task is to reorder the data from the log file such that all the lines with words are at the top in the log file, in lexicographical order.
+Words are ordered lexicographically ignoring the identifier except in the case of ties. In the case of ties (if there are two lines that are
+identical, except for the identifier), the identifier is used to order lexicographically. Alphanumerics should be sorted in ASCII order 
+(numbers come before letters). The identifiers must still be part of the lines in the Output Strings. Lines with integers do not need to be 
+sorted relative to other lines with integers.
+
+Write an algorithm to reorder the data in the log file, according to the rules above.
+
+Input
+The input to the function/method consists of two arguments-
+logFileSize, an integer representing the number of lines in the log file;
+loglines, a list of Strings representing the log file.
+
+Output
+Return a list of Strings representing the reordered log file data.
+
+Note
+Identifier consists of only English letters and numbers.
+The lines with words are not required to match case and the sort needs to be case insensitive.
+
+Exmaple
+Input
+logFileSize = 5
+logLines = 
+[a1 9 2 3 1]
+[g1 Act car]
+[z04 4 7]
+[ab1 off KEY dog]
+[a8 act zoo]
+
+Output
+[g1 Act car]
+[a8 act zoo]
+[ab1 off KEY dog]
+[a1 9 2 3 1]
+[z04 4 7]
+
+Explanation:
+Second, fourth and fifth lines are the lines with words. According to the alphabetical order, the second line will be reordered first in the log
+file, then fifth, an the fourth comes in the log file. Next the lines with numbers come in the order in which these lines were in the input.

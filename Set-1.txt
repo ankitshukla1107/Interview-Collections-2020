@@ -1,0 +1,45 @@
+1) (Category: Hive) Write code to create a dynamically partitioned table
+
+2) (Category: SQL) Given a employee table with fields as:
+EMPID, ENAME, SALARY, MONTH---Assume table is having 10 years of data from 2009 to 2019
+Find average salary for each employee by quarter?
+
+3) (Category:SQL) For each year which quarter have the highest sales percentage?
+Sales
+year quarter	sales 
+2017	4	    32000      
+2017	3	    49000
+2017	2	    78000
+2017	1	    55000
+2018	1	    32562
+2018	2	    69874
+2018	3	    8965
+2018	4	    41000
+2019	1	    85236
+2019	2	    96500
+2019	3	    75000
+2019	4	    87456
+
+O/P – 
+year	quarter	sales	% growth
+2017	2	78000	    41.81
+2018	4	41000	    357.33
+2019	4	87456	    16.66
+
+4) Given a sorted array of integers which contains repeated elements in it. Write a function which takesinteger as input and return first and 
+last occurance of that integer in O(logn) time complexity?
+
+5) The cost of a stock on each day is given in an array, find the days on which we should buy and sell the stocks so as to obtain maximum profit?
+{100, 180, 260, 310, 40, 535, 695}
+
+1.	Buy on day 0 and sell on day 3
+2.	Buy on day 4 and sell on day 6
+
+6) Given an integer array which contains 0's in it. Move all 0's to the end of array in O(n) time complexity and O(1) space complexity?
+
+7) Check if two binary trees are mirror of each other or not?
+
+8) Given an array which contains repeatitive elements. Find count of numbers for repeatitive number in array in O(n) time complexity and O(1) 
+space complexity?
+
+9) Design and Implement LRU Cache?
